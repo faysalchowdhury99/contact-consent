@@ -179,6 +179,9 @@ button:focus {
 
 /* ======= Contact PopUp ======= */
 #pop-up-contact {
+  #contact-modal {
+    backdrop-filter: blur(3px);
+  }
   .modal-content {
     position: relative;
     .btn-close {

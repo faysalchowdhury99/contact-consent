@@ -189,6 +189,11 @@ button:focus {
 }
 
 /* ======= Contact PopUp ======= */
+#pop-up-contact #contact-modal {
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
 #pop-up-contact .modal-content {
   position: relative;
 }

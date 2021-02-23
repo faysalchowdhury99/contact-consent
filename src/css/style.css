@@ -78,6 +78,10 @@ button:focus {
 }
 
 /* ======= Reuseable ======= */
+.navbar-space {
+  padding: 50px 0;
+}
+
 .heading {
   font-size: 40px;
   font-family: "poligon-bold";
@@ -175,6 +179,62 @@ button:focus {
   padding: 10px 30px !important;
 }
 
+#header-section .navbar.sticky-nav {
+  -webkit-box-shadow: 8px 13px 23px #0000001a;
+          box-shadow: 8px 13px 23px #0000001a;
+  padding: 20px 0 !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
+}
+
+/* ======= Contact PopUp ======= */
+#pop-up-contact .modal-content {
+  position: relative;
+}
+
+#pop-up-contact .modal-content .btn-close {
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  background-color: #ffffff;
+  opacity: 1 !important;
+  border-radius: 50%;
+  padding: 8px;
+  z-index: 9999;
+  -webkit-box-shadow: 0 0 10px #14233952;
+          box-shadow: 0 0 10px #14233952;
+}
+
+#pop-up-contact .modal-content .btn-close:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+#pop-up-contact .modal-content .modal-body {
+  padding: 30px !important;
+}
+
+#pop-up-contact .modal-content .modal-body form input,
+#pop-up-contact .modal-content .modal-body form textarea {
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+#pop-up-contact .modal-content .modal-body form input:focus,
+#pop-up-contact .modal-content .modal-body form textarea:focus {
+  outline: none !important;
+}
+
+#pop-up-contact .modal-content .modal-body form textarea {
+  height: 100px;
+}
+
+#pop-up-contact .modal-content .modal-body form button {
+  border-radius: 8px;
+}
+
 /* ======= Banner Section ======= */
 #banner-section {
   padding: 30px 0;
@@ -213,7 +273,7 @@ button:focus {
 }
 
 #pricing-section .right-side .pricing-card .card-button-box .button {
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 /* ======= Solution Section ======= */
@@ -332,7 +392,7 @@ button:focus {
   -webkit-box-shadow: 0px 3px 10px #00000012;
           box-shadow: 0px 3px 10px #00000012;
   border-radius: 8px;
-  padding: 10px;
+  padding: 10px 20px;
 }
 
 #contact-section .right-side form .send-message input:focus,
@@ -345,7 +405,7 @@ button:focus {
 }
 
 #contact-section .right-side form .submit-button-box .button {
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 /* ======= Subscribe Section ======= */

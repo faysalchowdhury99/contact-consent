@@ -80,6 +80,9 @@ button:focus {
   font-family: 'Bebas Neue', cursive;
 }
 /* ======= Reuseable ======= */
+.navbar-space {
+  padding: 50px 0;
+}
 .heading {
   font-size: $heading;
   font-family: $p-bold;
@@ -165,6 +168,53 @@ button:focus {
         }
       }
     }
+    &.sticky-nav {
+      box-shadow: 8px 13px 23px #0000001a;
+      padding: 20px 0 !important;
+      transition: all 0.3s ease-in-out;
+      background-color: #ffffff;
+    }
+  }
+}
+
+/* ======= Contact PopUp ======= */
+#pop-up-contact {
+  .modal-content {
+    position: relative;
+    .btn-close {
+      position: absolute;
+      right: -15px;
+      top: -15px;
+      background-color: #ffffff;
+      opacity: 1 !important;
+      border-radius: 50%;
+      padding: 8px;
+      z-index: 9999;
+      box-shadow: 0 0 10px #14233952;
+      &:focus {
+        box-shadow: none !important;
+      }
+    }
+    .modal-body {
+      padding: 30px !important;
+      form {
+        input,
+        textarea {
+          border: 1px solid #dcdcdc;
+          border-radius: 8px;
+          padding: 10px 20px;
+          &:focus {
+            outline: none !important;
+          }
+        }
+        textarea {
+          height: 100px;
+        }
+        button {
+          border-radius: 8px;
+        }
+      }
+    }
   }
 }
 
@@ -203,7 +253,7 @@ button:focus {
       }
       .card-button-box {
         .button {
-          border-radius: 4px;
+          border-radius: 8px;
         }
       }
     }
@@ -316,7 +366,7 @@ button:focus {
           border: 0;
           box-shadow: 0px 3px 10px #00000012;
           border-radius: 8px;
-          padding: 10px;
+          padding: 10px 20px;
           &:focus {
             outline: none !important;
           }
@@ -327,7 +377,7 @@ button:focus {
       }
       .submit-button-box {
         .button {
-          border-radius: 4px;
+          border-radius: 8px;
         }
       }
     }
